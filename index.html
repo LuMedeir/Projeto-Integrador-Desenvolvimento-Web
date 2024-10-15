@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniela Tattoo</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Certifique-se de que o caminho está correto -->
+
+    <!-- Pré-conexão para desempenho -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Link para o Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon"> <!-- Substitua pelo caminho correto do seu favicon -->
+
+    <!-- Link para a fonte Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo Daniela Araujo" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#espaco">Espaço</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>Daniela Araujo</h1>
+                <h2>Seja Bem-Vindo ao studio Daniela Araujo</h2>
+                <p>Transforme suas ideias em arte</p>
+                <a href="#contato" class="btn">Agende sua sessão</a>
+            </div>
+            <img src="images/image.png" alt="Descrição da Imagem" /> <!-- Adicione sua imagem aqui -->
+        </section>
+
+        <section id="sobre">
+            <div class="sobre-container">
+                <img src="images/Dani.png" alt="Imagem de Daniela Araujo" class="sobre-imagem"> <!-- Substitua pelo caminho da sua imagem -->
+                <div class="sobre-texto">
+                    <h2>Sobre</h2>
+                    <p>Daniela Araujo é uma tatuadora apaixonada pela arte de transformar histórias e emoções em tatuagens. Especialista em Fine Line, Tattoo Glitter, Aquarela e Mini Realismo Floral, Dani encanta todos com seu jeito único de fazer arte.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfólio</h2>
+            <p>Veja um pouquinho do meu trabalho</p>
+            <div class="portfolio-container">
+                <img src="images/tattoo1.png" alt="Descrição da Foto 1" class="portfolio-imagem"> <!-- Substitua pelos caminhos das suas imagens -->
+                <img src="images/tattoo2.png" alt="Descrição da Foto 2" class="portfolio-imagem">
+                <img src="images/tattoo3.png" alt="Descrição da Foto 3" class="portfolio-imagem">
+                <img src="images/tattoo4.png" alt="Descrição da Foto 4" class="portfolio-imagem">
+                <img src="images/tattoo5.png" alt="Descrição da Foto 5" class="portfolio-imagem">
+                <img src="images/tattoo6.png" alt="Descrição da Foto 6" class="portfolio-imagem">
+            </div>
+        </section>
+
+        <section id="espaco" class="espaco">
+            <div class="espaco-content">
+                <div class="espaco-texto">
+                    <h2>Nosso Espaço</h2>
+                    <p>Avenida Claudio Augusto Fernandes, 448, Sao Mateus - São Paulo, SP</p>
+                    <p>O studio Daniela Araujo é um espaço acolhedor e criativo, projetado para garantir o máximo conforto durante sua sessão de tatuagem. Cada detalhe foi pensado para proporcionar uma experiência relaxante e inspiradora, desde a recepção até a sala de criação.</p>
+                </div>
+                <div class="espaco-imagem">
+                    <img src="images/espaço.png" alt="Foto do espaço do studio Daniela Araujo">
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato para fazer um orçamento, agendar sua sessão ou tirar dúvidas.</p>
+        
+            <form class="form-contato" action="#" method="POST">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome">
+        
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Seu email">
+        
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" placeholder="Sua mensagem"></textarea>
+        
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+            
+            <div class="contato-opcoes">
+                <p>Ou entre em contato via:</p>
+                <a href="https://wa.me/5511977993277" target="_blank" class="contato-wpp">
+                    <img src="images/whatsapp-icon.png" alt="WhatsApp" />
+                </a>
+                <a href="https://www.instagram.com/daniaraujo.tattoo/" target="_blank" class="contato-insta">
+                    <img src="images/instagram-icon.png" alt="Instagram" />
+                </a>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Daniela Araujo Tattoo. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Link para o arquivo script.js -->
+    <script src="script.js"></script>
+</body>
+</html>

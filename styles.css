@@ -1,0 +1,288 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    color: #2b661e;
+    padding: 20px; /* Padding geral para o cabeçalho */
+    position: fixed; /* Faz o header ficar fixo */
+    top: 0; /* Coloca o header no topo da página */
+    left: 0; /* Coloca o header à esquerda */
+    right: 0; /* Extende o header até a direita */
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+    box-shadow: 0 4px 8px #2b661e; /* Adiciona a sombra abaixo do header */
+}
+
+.logo {
+    margin-left: 120px; /* Ajuste o valor conforme necessário */
+}
+
+.logo img {
+    max-width: 35%; /* Para que a imagem não exceda o tamanho do container */
+    height: auto; /* Para manter a proporção */
+}
+
+nav {
+    padding: 0 120px; /* Ajuste o valor para aumentar o espaçamento lateral */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #1e1e1e;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a.active {
+    color: #2b661e; /* Cor verde para o link "Sobre" */
+    font-size: 20px;
+}
+
+p {
+    font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+.hero {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff; /* Fundo */
+    height: 120vh; /* Altura total da viewport */
+    display: flex; /* Flexbox para organizar conteúdo */
+    justify-content: flex-end; /* Alinha a imagem à direita */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 20px; /* Espaçamento interno */
+    padding-left: 100px; /* Aumenta o espaço à esquerda */
+    padding-right: 90px; /* Aumenta o espaço à direita */
+}
+
+.hero img {
+    width: 610px; /* Ajuste o tamanho aqui */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-left: 20px; /* Espaço à esquerda da imagem */
+}
+
+.hero-content {
+    color: #1e1e1e; /* Cor do texto */
+    text-align: left; /* Alinhamento do texto à esquerda */
+    margin-right: 300px; /* Espaço entre o texto e a imagem */
+}
+
+.hero-content h1 {
+    font-size: 4rem; /* Ajuste o valor conforme necessário */
+    margin: 0; /* Remove margens padrão */
+    white-space: nowrap; /* Impede quebras de linha */
+}
+
+.hero-content p {
+    font-size: 1rem; /* Ajuste o valor conforme necessário */
+}
+
+.btn {
+    background-color: #2b661e; /* Cor do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 12px 20px; /* Espaçamento do botão */
+    text-decoration: none; /* Remove sublinhado */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+section {
+    font-family: 'Roboto', sans-serif;
+    text-align: center; /* Centraliza o texto dentro da seção */
+    padding: 20px;
+    background-color: #fff; /* Fundo branco para a seção */
+    color: #1e1e1e; /* Cor do texto do rodapé */
+    border-radius: 8px; /* Bordas arredondadas */
+    margin: 20px 0; /* Adiciona espaço entre as seções */
+    padding-left: 100px; /* Aumenta o espaço à esquerda */
+    padding-right: 100px; /* Aumenta o espaço à direita */
+    box-shadow: 0 4px 8px #2b661e; /* Sombra opcional */
+    border-radius: 8px; /* Bordas arredondadas */
+    margin: 20px 0; /* Adiciona espaço entre as seções */
+}
+
+.sobre-container {
+    display: flex; /* Usar flexbox para alinhar a imagem e o texto */
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+    justify-content: space-between; /* Adiciona espaço entre a imagem e o texto */
+    padding: 20px; /* Padding interno da seção */
+    background-color: #fff; /* Fundo branco para a seção */
+    margin: 20px 0; /* Espaço entre seções */
+    padding-right: 40px; /* Aumenta o espaço à direita */
+}
+
+.sobre-imagem {
+    width: 30%; /* Ajuste a largura conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 120px; /* Espaço à direita da imagem */
+    border-radius: 30px; /* Bordas arredondadas na imagem, opcional */
+    padding-left: 40px; /* Aumenta o espaço à esquerda */
+}
+
+.sobre-texto {
+    flex: 1; /* Permite que o texto ocupe o restante do espaço */
+    padding-right: 40px; /* Aumenta o espaço à direita */
+}
+
+#portfolio {
+    padding: 20px; /* Espaçamento interno da seção */
+    background-color: #f9f9f9; /* Fundo leve para a seção */
+    padding-left: 100px; /* Aumenta o espaço à esquerda */
+    padding-right: 100px; /* Aumenta o espaço à direita */
+}
+
+.portfolio-container {
+    display: grid; /* Usar grid para organizar as imagens */
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 15px; /* Espaço entre as imagens */
+}
+
+.portfolio-imagem {
+    width: 100%; /* Faz as imagens ocuparem 100% da coluna */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px #2b661e; /* Sombra opcional */
+    transition: transform 0.3s; /* Animação suave ao passar o mouse */
+}
+
+.portfolio-imagem:hover {
+    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+}
+
+.espaco {
+    padding: 50px 0; /* Espaçamento superior e inferior */
+    padding-left: 100px; /* Aumenta o espaço à esquerda */
+    padding-right: 100px; /* Aumenta o espaço à direita */
+}
+
+.espaco-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
+.espaco-texto {
+    flex: 1; /* O texto ocupa 1 parte do espaço */
+    font-family: 'Roboto', sans-serif;
+    max-width: 600px; /* Define uma largura máxima para o texto */
+}
+
+.espaco-imagem {
+    flex: 1; /* A imagem ocupa a mesma parte que o texto */
+}
+
+.espaco-imagem img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px; /* Bordas arredondadas na imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+/* Seção Contato */
+.contato {
+    text-align: center;
+    padding: 50px;
+    background-color: #f9f9f9; /* Cor de fundo clara */
+}
+
+.contato h2 {
+    font-size: 28px;
+    color: #333; /* Cor do título */
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-contato {
+    display: inline-block;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border: 2px solid #4CAF50; /* Borda verde */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.form-contato label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.form-contato input,
+.form-contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    resize: vertical; /* Permitir ajuste vertical */
+    min-height: 50px; /* Altura mínima do textarea */
+    box-sizing: border-box; /* Inclui o padding e a borda no tamanho total */
+}
+
+.form-contato button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+
+.form-contato button:hover {
+    background-color: #45a049;
+}
+
+.contato-opcoes {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contato-opcoes p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contato-opcoes a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.contato-opcoes img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.contato-opcoes a:hover img {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+footer {
+    text-align: center; /* Centraliza o texto do rodapé */
+    padding: 10px; /* Espaçamento do rodapé */
+    background-color: #000; /* Cor do fundo do rodapé */
+    color: #dbd8d8; /* Cor do texto do rodapé */
+}
