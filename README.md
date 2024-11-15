@@ -40,7 +40,7 @@ Adicione uma imagem ou captura de tela do site (opcional).
 
 ## 🎥 Apresentação do Projeto
 
-Assista à apresentação completa do projeto no YouTube: [**Link para o vídeo**]([https://www.youtube.com/seu-video](https://www.youtube.com/watch?v=F1sCBwxWftM)).
+Assista à apresentação completa do projeto no YouTube: [**Link para o vídeo**](https://youtu.be/F1sCBwxWftM?feature=shared).
 
 ---
 
