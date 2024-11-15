@@ -36,7 +36,7 @@ O site está hospedado no GitHub Pages e pode ser acessado [**aqui**](https://lu
 
 ## 📸 Demonstração
 
-Adicione uma imagem ou captura de tela do site (opcional).
+![Demonstração do site](images/site.png)
 
 ## 🎥 Apresentação do Projeto
 
